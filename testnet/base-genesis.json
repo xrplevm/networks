@@ -13,7 +13,15 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": []
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "ethm1pq97fffh6v0afzlf8gj78v5k642jeg9wvrznx3",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        }
+      ]
     },
     "authz": {
       "authorization": []
@@ -22,40 +30,71 @@
       "params": {
         "default_send_enabled": true
       },
-      "balances": [],
-      "supply": [],
-      "denom_metadata": [{
-        "display": "poa",
-        "description": "Proof of Authority token",
-        "name": "POA",
-        "symbol": "POA",
-        "base": "poa",
-        "denom_units": [{
-          "denom": "poa",
-          "exponent": 0
-        }]
-      }, {
-        "display": "xrp",
-        "description": "XRP is a digital asset that's native to the XRP Ledger and XRPL EVM Sidechain, an open-source permissionless and decentralized blockchain technology.",
-        "name": "XRP",
-        "symbol": "XRP",
-        "base": "axrp",
-        "denom_units": [{
+      "balances": [
+        {
+          "address": "ethm1pq97fffh6v0afzlf8gj78v5k642jeg9wvrznx3",
+          "coins": [
+            {
+              "denom": "axrp",
+              "amount": "250000000000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [
+        {
           "denom": "axrp",
-          "aliases": ["attoxrp"],
-          "exponent": 0
-        }, {
-          "denom": "drop",
-          "exponent": 12
-        }, {
-          "denom": "xrp",
-          "exponent": 18
-        }]
-      }],
-      "send_enabled": [{
-        "denom": "poa",
-        "enabled": false
-      }]
+          "amount": "250000000000000000000"
+        }
+      ],
+      "denom_metadata": [
+        {
+          "description": "Proof of Authority token",
+          "denom_units": [
+            {
+              "denom": "poa",
+              "exponent": 0,
+              "aliases": []
+            }
+          ],
+          "base": "poa",
+          "display": "poa",
+          "name": "POA",
+          "symbol": "POA"
+        },
+        {
+          "description": "XRP is a digital asset that's native to the XRP Ledger and XRPL EVM Sidechain, an open-source permissionless and decentralized blockchain technology.",
+          "denom_units": [
+            {
+              "denom": "axrp",
+              "exponent": 0,
+              "aliases": [
+                "attoxrp"
+              ]
+            },
+            {
+              "denom": "drop",
+              "exponent": 12,
+              "aliases": []
+            },
+            {
+              "denom": "xrp",
+              "exponent": 18,
+              "aliases": []
+            }
+          ],
+          "base": "axrp",
+          "display": "xrp",
+          "name": "XRP",
+          "symbol": "XRP"
+        }
+      ],
+      "send_enabled": [
+        {
+          "denom": "poa",
+          "enabled": false
+        }
+      ]
     },
     "capability": {
       "index": "1",
