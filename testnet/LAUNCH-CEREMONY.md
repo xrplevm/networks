@@ -66,7 +66,7 @@ exrpd add-genesis-account "$(exrpd keys show <key_name> -a)" 1000000poa,40000000
 
 Generate the validator transaction:
 ```sh
-exrpd gentx <key_name> 1000000poa --fees 40000000000000000axrp --chain-id xrplevm_1449000-1
+exrpd gentx <key_name> 1000000poa --fees 40000000000000000axrp --chain-id xrplevm_1449000-1 --commission-rate 0 --commission-max-rate 0 --commission-max-change-rate 0
 ```
 
 Collect all genesis transactions:
