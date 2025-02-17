@@ -94,7 +94,7 @@ wget -O ~/.exrpd/config/genesis.json https://raw.githubusercontent.com/xrplevm/n
 ### 2. Add Seeds to the Node Configuration
 Add seeds to the node configuration that will allow connecting to the rest of the node. Modify the file `~/.exrpd/config/config.toml` to include the following seed node:
 ```sh
-PEERS=`curl -sL https://raw.githubusercontent.com/Peersyst/xrp-evm-archive/main/poa-devnet/peers.txt | sort -R | head -n 10 | awk '{print $1}' | paste -s -d, -`
+PEERS=`curl -sL https://raw.githubusercontent.com/xrplevm/network/main/testnet/peers.txt | sort -R | head -n 10 | awk '{print $1}' | paste -s -d, -`
 sed -i.bak -e "s/^seeds *=.*/seeds = \"$PEERS\"/" ~/.exrpd/config/config.toml
 cat ~/.exrpd/config/config.toml | grep persistent_peers
 ```
