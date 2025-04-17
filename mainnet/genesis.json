@@ -1,10 +1,9 @@
 {
   "app_name": "xrplevm",
   "app_version": "v7.0.0",
-  "genesis_time": "2025-04-23T00:00:00Z",
+  "genesis_time": "2025-04-24T12:00:00Z",
   "chain_id": "xrplevm_1440000-1",
   "initial_height": "1",
-  "app_hash": null,
   "app_state": {
     "auth": {
       "params": {
@@ -71,7 +70,6 @@
     },
     "bank": {
       "params": {
-        "send_enabled": [],
         "default_send_enabled": true
       },
       "balances": [
@@ -186,9 +184,7 @@
           "base": "poa",
           "display": "poa",
           "name": "POA",
-          "symbol": "POA",
-          "uri": "",
-          "uri_hash": ""
+          "symbol": "POA"
         },
         {
           "description": "XRP is a digital asset that's native to the XRP Ledger and XRPL EVM Sidechain, an open-source permissionless and decentralized blockchain technology.",
@@ -214,9 +210,7 @@
           "base": "axrp",
           "display": "xrp",
           "name": "XRP",
-          "symbol": "XRP",
-          "uri": "",
-          "uri_hash": ""
+          "symbol": "XRP"
         }
       ],
       "send_enabled": [
