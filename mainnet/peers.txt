@@ -1,1 +1,2 @@
 2dc8d776176a275bc64421e31d9b1ed6af228fa5@seed-0.mainnet.xrplevm.org:26656
+df1f145848d253800d4e4216e8793158688912f1@seeds.kingnodes.com:30056
