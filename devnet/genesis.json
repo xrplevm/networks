@@ -3,7 +3,7 @@
   "app_version": "v9.0.0",
   "genesis_time": "2026-01-27T09:51:07.459965Z",
   "chain_id": "xrplevm_1449900-1",
-  "initial_height": 1,
+  "initial_height": "1",
   "app_hash": null,
   "app_state": {
     "auth": {
